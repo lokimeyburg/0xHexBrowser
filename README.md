@@ -2,9 +2,11 @@
 
 A mini browser that shows the usage of [browserViews](https://electronjs.org/docs/api/browser-view) in an app.
 
-```
-$ electron .
-```
+## Run
+
+1. Install Electron via `npm install -g electron`
+2. Navigate the root directory via `cd 0xHexBrowser`
+2. Run the sample via `electron .`
 
 ## Config Options
 
