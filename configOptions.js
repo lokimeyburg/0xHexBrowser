@@ -1,9 +1,9 @@
 module.exports = {
     settings: () => {
         return {
-            "devTools": false,
-            "useBrowserViews": true,
-            "alwaysReload": true,
+            "devTools":         false,
+            "useBrowserViews":  true,
+            "alwaysReload":     true,
             "alwaysReloadAndIgnoreCache": true
         }
     },
