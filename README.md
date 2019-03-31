@@ -2,6 +2,8 @@
 
 A mini browser that shows the usage of [browserViews](https://electronjs.org/docs/api/browser-view) in an app.
 
+![0xHexBrowser Screenshot](https://raw.githubusercontent.com/lokimeyburg/0xHexBrowser/master/image.png)
+
 ## Run
 
 1. Install Electron via `npm install -g electron`
