@@ -23,8 +23,8 @@ module.exports = {
             },
             { 
               "id": 3,
-              "url": "https://electronjs.org",
-              "title": "Electron"
+              "url": "https://trello.com/login",
+              "title": "Trello"
             }
         ]
     }

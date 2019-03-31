@@ -9,14 +9,13 @@ if (!settings.useBrowserViews) {
   
   // create webviews
   let tabContainer = document.querySelector("#tabBrowserViewContainer")
-  console.log(tabContainer)
 
   tabs.forEach(tab => {
     let webviewHTML = `
       <webview 
         id="webview-${tab.id}">
       </webview>`
-    console.log(webviewHTML)
+
     tabContainer.appendChild(createElementFromHTML(webviewHTML)) 
   })
 }

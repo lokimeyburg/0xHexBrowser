@@ -4,7 +4,6 @@ let mainWindow;
 let settings = configOptions.settings()
 let tabs = configOptions.tabs()
 
-
 app.on('ready', function() {
   // Create the main window
   mainWindow = new BrowserWindow({width: 1024, height: 768 });
@@ -50,7 +49,7 @@ app.on('ready', function() {
     }
   }
 
-  // Manually resposition the browserView
+  // Resposition the browserView
   function repositionBrowserView(view) {
     let winSize   = mainWindow.getSize()
     let winWidth  = winSize[0]
@@ -65,7 +64,7 @@ app.on('ready', function() {
                       height: browserViewHeight })
   }
 
-  // Manually reposition the browserView when the mainWindow is resized
+  // Position the browserView when the mainWindow is resized
   mainWindow.on('resize', () => {
     repositionBrowserView(mainWindow.getBrowserView())
   })
@@ -95,8 +94,8 @@ app.on('ready', function() {
 
     // push active tab onto the stack and load it
     var activeTab = tabs.filter(obj => {
-      return tab.active
-    })
+      return obj.active
+    })[0]
     nagivateToTab(activeTab)
   })
 
