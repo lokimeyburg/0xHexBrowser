@@ -62,7 +62,10 @@ ipc.on('setTabs', (event, args) => {
     var tabNode = createElementFromHTML(tabHTML)
 
     if (tab.active) {
+      // Add the "active" class
       tabNode.classList.add("active")
+      // Set the URL location bar
+      document.querySelector('#location').value = tab.url
     }
 
     // WebViews
